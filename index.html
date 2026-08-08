@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Challenges — Nebojša does hard things on short notice</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">CHALLENGES</a>
+  <button class="nav-toggle">☰</button>
+  <div class="nav-links">
+    <a href="ironman-70-3-belgrade-2026.html">IRONMAN 70.3</a>
+    <a href="belgrade-marathon-2026.html">Marathon</a>
+  </div>
+  <span class="countdown" id="countdown"></span>
+</nav>
+<div class="mobile-countdown" id="mobileCountdown" style="display:none;"></div>
+
+<div class="page">
+
+<!-- HERO -->
+<div class="slide slide-title" id="top">
+  <h1>CHALLENGES</h1>
+  <p class="subtitle">Doing hard things on five weeks' notice.</p>
+  <p class="meta">
+    The method: pick something slightly unreasonable →<br>
+    give it <strong>5 weeks</strong> → show up → finish.<br><br>
+    Every workout below syncs automatically from Strava.
+  </p>
+</div>
+
+<!-- CHALLENGE CARDS -->
+<div class="slide" id="challenges">
+  <h2><span class="number">★</span> The Challenges</h2>
+
+  <div class="challenge-grid">
+
+    <a class="challenge-card" href="ironman-70-3-belgrade-2026.html">
+      <span class="status live">In Training</span>
+      <h3>IRONMAN 70.3 Belgrade</h3>
+      <div class="sub">September 13, 2026 · Ada Ciganlija</div>
+      <div class="headline" id="im-countdown">—</div>
+      <div class="detail">
+        1.9km swim · 90km bike · 21.1km run.<br>
+        Longest swim ever: 650m. Rides on record: one.<br>
+        Prep time: 5 weeks. Obviously.
+      </div>
+      <div class="disciplines">
+        <span class="sport-badge Swim" id="im-swim">Swim —</span>
+        <span class="sport-badge Ride" id="im-bike">Bike —</span>
+        <span class="sport-badge Run" id="im-run">Run —</span>
+      </div>
+    </a>
+
+    <a class="challenge-card" href="belgrade-marathon-2026.html">
+      <span class="status done">Finished</span>
+      <h3>Belgrade Marathon</h3>
+      <div class="sub">April 19, 2026 · 42.195 km</div>
+      <div class="headline green">4:14:27</div>
+      <div class="detail">
+        From "hasn't run in a year" to marathon finisher.<br>
+        <span id="mar-stats">5 weeks · 11 training runs</span><br>
+        Verdict: legs still work.
+      </div>
+      <div class="disciplines">
+        <span class="sport-badge Run">Run 163km in 5 weeks</span>
+      </div>
+    </a>
+
+    <div class="challenge-card" style="cursor:default;">
+      <span class="status future">Next?</span>
+      <h3>To Be Determined</h3>
+      <div class="sub">Something else unreasonable</div>
+      <div class="headline" style="color:var(--dim);">?</div>
+      <div class="detail">
+        Full IRONMAN? Ultra? Channel swim?<br>
+        Applications open the Monday after race day.<br>
+        Five weeks will be provided.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 2026 TOTALS -->
+<div class="slide slide-compact" id="totals">
+  <h2><span class="number">Σ</span> 2026 So Far</h2>
+  <div class="stat-row">
+    <div class="big-stat"><div class="number-val" id="t-run">—</div><div class="label">km run</div></div>
+    <div class="big-stat"><div class="number-val" style="color:var(--bike)" id="t-bike">—</div><div class="label">km ridden</div></div>
+    <div class="big-stat"><div class="number-val" style="color:var(--swim)" id="t-swim">—</div><div class="label">m swum</div></div>
+    <div class="big-stat"><div class="number-val" style="color:var(--gold)" id="t-hours">—</div><div class="label">hours training</div></div>
+    <div class="big-stat"><div class="number-val" style="color:var(--green)" id="t-acts">—</div><div class="label">activities</div></div>
+  </div>
+
+  <h3>Latest Activity</h3>
+  <div class="run-log" id="latestLog"></div>
+</div>
+
+</div>
+
+<script src="data/activities.js"></script>
+<script src="assets/site.js"></script>
+<script>
+  startCountdown('countdown', '2026-09-13', 'IRONMAN 70.3');
+
+  // IM 70.3 card: countdown + per-discipline totals since plan start
+  const IM_START = '2026-08-08';
+  document.getElementById('im-countdown').textContent = daysUntil('2026-09-13') + ' days';
+  const tri = ACT.filter(a => a.date >= IM_START);
+  document.getElementById('im-swim').textContent = 'Swim ' + (sumKm(bySport(tri, 'Swim')) * 1000).toFixed(0) + 'm';
+  document.getElementById('im-bike').textContent = 'Bike ' + sumKm(bySport(tri, 'Ride')).toFixed(0) + 'km';
+  document.getElementById('im-run').textContent = 'Run ' + sumKm(bySport(tri, 'Run')).toFixed(0) + 'km';
+
+  // Marathon card training stats (Mar 14 – Apr 19, runs before race day)
+  const mar = ACT.filter(a => a.sport === 'Run' && inRange(a, '2026-03-14', '2026-04-18'));
+  const marH = sumH(mar) ;
+  document.getElementById('mar-stats').textContent =
+    `5 weeks · ${mar.length} training runs · ${fmtH(marH)} of training`;
+
+  // 2026 totals
+  document.getElementById('t-run').textContent = sumKm(bySport(ACT, 'Run')).toFixed(0);
+  document.getElementById('t-bike').textContent = sumKm(bySport(ACT, 'Ride')).toFixed(0);
+  document.getElementById('t-swim').textContent = (sumKm(bySport(ACT, 'Swim')) * 1000).toFixed(0);
+  document.getElementById('t-hours').textContent = sumH(ACT).toFixed(0);
+  document.getElementById('t-acts').textContent = ACT.length;
+
+  // Latest 8 activities
+  renderLog('latestLog', () => true);
+  const log = document.getElementById('latestLog');
+  while (log.children.length > 9) log.removeChild(log.lastChild); // header + 8
+</script>
+
+</body>
+</html>

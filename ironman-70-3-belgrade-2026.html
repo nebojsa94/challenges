@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IRONMAN 70.3 Belgrade 2026 — Training Dashboard</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">CHALLENGES</a>
+  <button class="nav-toggle">☰</button>
+  <div class="nav-links">
+    <a href="#dashboard">Dashboard</a>
+    <a href="#assessment">Assessment</a>
+    <a href="#plan">Plan</a>
+    <a href="#swim">Swim</a>
+    <a href="#race">Race Day</a>
+    <a href="#gear">Gear</a>
+    <a href="#unknowns">Unknowns</a>
+  </div>
+  <span class="countdown" id="countdown"></span>
+</nav>
+
+<div class="page">
+
+<!-- TITLE -->
+<div class="slide slide-title tri" id="top">
+  <h1>IRONMAN 70.3<br>BELGRADE</h1>
+  <p class="subtitle">1.9km swim · 90km bike · 21.1km run</p>
+  <p class="meta">
+    <strong>Sunday, September 13, 2026</strong> · Ada Ciganlija, Belgrade<br>
+    Swim in Sava Lake → two flat bike loops through the city → run around the lake<br><br>
+    Prep time: <strong>5 weeks</strong> (again)<br>
+    Longest swim ever: <strong>650m</strong> · Rides on record: <strong>one</strong> · Marathons this year: <strong>one, 4:14</strong>
+  </p>
+</div>
+
+<!-- DASHBOARD -->
+<div class="slide" id="dashboard">
+  <h2><span class="number">★</span> Progress Dashboard</h2>
+  <p style="margin-bottom:10px;">Live from Strava, synced every 30 minutes. Swim <span style="color:var(--swim)">■</span> Bike <span style="color:var(--bike)">■</span> Run <span style="color:var(--run)">■</span></p>
+
+  <div class="progress-grid" id="weekBlocks"></div>
+
+  <h3>Training Log</h3>
+  <div class="run-log" id="triLog"></div>
+</div>
+
+<!-- HONEST ASSESSMENT -->
+<div class="slide" id="assessment">
+  <h2><span class="number">!</span> Honest Assessment</h2>
+
+  <div class="two-col">
+    <div>
+      <h3>Why this is doable</h3>
+      <ul>
+        <li><strong>The run is already done.</strong> A 4:14 marathoner doesn't fear a flat half marathon. It's the victory lap.</li>
+        <li><strong>The bike is an endurance problem</strong>, and endurance is the thing you demonstrably have. Flat course, closed roads.</li>
+        <li><strong>The race is in your backyard.</strong> The swim is in Sava Lake — you can train on the exact course every week.</li>
+        <li><strong>Cutoffs are generous.</strong> The math below leaves 30–60+ minutes of margin at every gate.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>The one real problem</h3>
+      <div class="danger">
+        <p><strong>You cannot currently swim 1900m.</strong> Longest ever: 650m. The swim is the one discipline you can't grit through — deep-water fatigue is a safety problem, not a suffering problem. The entire plan hangs on one rule: <strong>swim 3× per week, every week, no exceptions.</strong> Everything else can flex.</p>
+      </div>
+      <p>Swim fitness builds fastest of the three — it's technique- and frequency-limited, and the engine behind it (yours) is already marathon-sized. 650m → 1900m in 4 weeks at 3 swims/week is a well-trodden path. Wetsuit legal at 23°C = free buoyancy. Breaststroke is legal.</p>
+    </div>
+  </div>
+
+  <h3>The Cutoff Math</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Segment</th><th>Cutoff</th><th>Realistic pace</th><th>Time</th><th>Margin</th></tr></thead>
+    <tbody>
+      <tr><td>Swim 1.9km</td><td>1:10 from start</td><td>2:30–2:50/100m, breaststroke mix</td><td>48–54 min</td><td><strong style="color:var(--gold)">~18 min</strong></td></tr>
+      <tr><td>T1</td><td>—</td><td>unhurried</td><td>6 min</td><td>—</td></tr>
+      <tr><td>Bike 90km</td><td>5:30 race clock</td><td>25–27 km/h flat</td><td>3:20–3:36</td><td><strong style="color:var(--green)">~50+ min</strong></td></tr>
+      <tr><td>T2</td><td>—</td><td>unhurried</td><td>5 min</td><td>—</td></tr>
+      <tr><td>Run 21.1km</td><td>8:30 race clock</td><td>6:00–6:20/km (5:50 fresh)</td><td>2:07–2:14</td><td><strong style="color:var(--green)">1h+</strong></td></tr>
+      <tr><td><strong>Total</strong></td><td><strong>8:30</strong></td><td></td><td><strong>≈ 6:30–6:55</strong></td><td></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="success">
+    <p><strong>Goal: FINISH.</strong> Target window 6:30–7:15. Even a disaster swim + slow bike puts you on the run with 3+ hours for 21km — you could walk half of it. The swim cutoff is the only gate that matters. That's why swimming is the whole plan.</p>
+  </div>
+
+  <div class="warning">
+    <p><strong>Decision point — September 5:</strong> 1900m continuous in Ada (any stroke mix) at the Week 4 rehearsal. Pass → taper and race. Fail → one retry Sep 8, then an honest conversation. Never swim open water alone: lifeguarded zone or buddy + swim buoy, every time.</p>
+  </div>
+</div>
+
+<!-- COURSE -->
+<div class="slide" id="course">
+  <h2><span class="number">⚑</span> Course Profile</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h4 style="color:var(--swim)">SWIM — 1.9km, Sava Lake</h4>
+      <p>Closed, protected, flat water. No current, no waves, no salt. ~23°C in September → <strong>wetsuit legal</strong>. Rolling start: seed yourself at the back, cross the mat, your personal 1:10 clock starts. Clean water beats the washing machine.</p>
+    </div>
+    <div class="card">
+      <h4 style="color:var(--bike)">BIKE — 90km, two flat loops</h4>
+      <p>Wide city avenues through the Ada bridge area. Fast, closed roads, no real climbing — wind on exposed river sections is the only terrain. <strong>Draft-illegal:</strong> 12m gap, pass within 25s.</p>
+    </div>
+    <div class="card">
+      <h4 style="color:var(--run)">RUN — 21.1km around the lake</h4>
+      <p>Flat circuit around Sava Lake — the paths you already run every week. Shaded wooded sections, aid stations every lap. You will know every meter of this course.</p>
+    </div>
+    <div class="card">
+      <h4>WEATHER — September in Belgrade</h4>
+      <p>14–27°C. Race morning ~15–18°C, warming through the run. Exposed lake sections in afternoon sun: cap + sunscreen. Historically ideal racing weather.</p>
+    </div>
+  </div>
+</div>
+
+<!-- PLAN OVERVIEW -->
+<div class="slide" id="plan">
+  <h2><span class="number">⏱</span> 5-Week Plan</h2>
+  <p style="margin-bottom:20px;"><strong>Philosophy:</strong> swim frequency over everything (14 swims to race day). Long rides grow 40→85km with eating practice. The run is maintained, not built. Brick runs every weekend. Sessions marked ★ are never skipped; everything else flexes.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Week</th><th>Dates</th><th>Swim</th><th>Bike</th><th>Run</th><th>Key Sessions</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Aug 8–16</td><td>2.5km (3×)</td><td>~100km</td><td>~20km</td><td>400m continuous test · 50km ride</td></tr>
+      <tr><td>2</td><td>Aug 17–23</td><td>3.5km (3×)</td><td>~130km</td><td>~25km</td><td>★ First open water at Ada · 60km + first brick</td></tr>
+      <tr><td>3</td><td>Aug 24–30</td><td>5km (3×)</td><td>~150km</td><td>~28km</td><td>★ 1200m OW · 75km + brick · 16km run</td></tr>
+      <tr><td>4</td><td>Aug 31–Sep 6</td><td>5km (3×)</td><td>~160km</td><td>~30km</td><td>★★ 1900m REHEARSAL + race simulation</td></tr>
+      <tr><td>5</td><td>Sep 7–13</td><td>1.5km</td><td>~60km</td><td>~12km</td><td>Taper → <strong>RACE DAY</strong></td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<!-- WEEK 1 -->
+<div class="slide slide-compact">
+  <h2><span class="number">1</span> Week 1: Foundations (Aug 8–16)</h2>
+  <p style="margin-bottom:15px;">Nine days, so it breathes. You already opened it with a 40km ride + 2.5km run — that was your first brick, whether you meant it or not.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Day</th><th>Session</th><th>Details</th></tr></thead>
+    <tbody>
+      <tr><td>Sat 8</td><td>✅ Ride 40km + 2.5km run</td><td>Done. Already training.</td></tr>
+      <tr><td>Sun 9</td><td><strong style="color:var(--swim)">Swim #1 ★</strong></td><td>Pool. 8×50m, 20–30s rest. Relaxed exhale underwater, long strokes. Rhythm, not fitness.</td></tr>
+      <tr><td>Mon 10</td><td>Rest</td><td>Buy gear. Register. Book bike service.</td></tr>
+      <tr><td>Tue 11</td><td>Bike 60–75min</td><td>~25km flat. Practice drinking while riding, shifting early.</td></tr>
+      <tr><td>Wed 12</td><td><strong style="color:var(--swim)">Swim #2 ★</strong></td><td>6×100m, 30–45s rest. Find the pace you could hold all day.</td></tr>
+      <tr><td>Thu 13</td><td>Run 10km easy</td><td>Your normal run, 5:50–6:10/km.</td></tr>
+      <tr><td>Fri 14</td><td>Rest</td><td>Or 30min easy spin.</td></tr>
+      <tr><td>Sat 15</td><td><strong style="color:var(--bike)">Long ride 50km ★</strong></td><td>Flat. Eat at 45min and 1h30. Bottle every 15min. This is nutrition training.</td></tr>
+      <tr><td>Sun 16</td><td><strong style="color:var(--swim)">Swim #3 ★</strong> + 5km run</td><td>400m continuous test (breaststroke breaks OK, don't hold the wall) + 4×50 easy.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="info"><p><strong>Checkpoint:</strong> 400m without holding the wall = on schedule. If not → book 1–2 swim lessons THIS WEEK. A coach fixing your breathing is worth more than any session in this plan.</p></div>
+</div>
+
+<!-- WEEK 2 -->
+<div class="slide slide-compact">
+  <h2><span class="number">2</span> Week 2: Open Water (Aug 17–23)</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Day</th><th>Session</th><th>Details</th></tr></thead>
+    <tbody>
+      <tr><td>Mon 17</td><td>Rest</td><td></td></tr>
+      <tr><td>Tue 18</td><td><strong style="color:var(--swim)">Swim #4 ★</strong></td><td>5×200m, 45s rest. Steady, boring, controlled.</td></tr>
+      <tr><td>Wed 19</td><td>Bike 90min</td><td>~35km with 3×10min at race effort (can barely talk).</td></tr>
+      <tr><td>Thu 20</td><td>Run 10km + strides</td><td></td></tr>
+      <tr><td>Fri 21</td><td><strong style="color:var(--swim)">Swim #5 — OPEN WATER ★★</strong></td><td>Ada, 20–30min, lifeguarded zone or buddy + buoy. Wetsuit on/off, sighting every ~10 strokes, staying calm over dark water. Scariest session of the plan — everything after it is easier.</td></tr>
+      <tr><td>Sat 22</td><td><strong style="color:var(--bike)">60km + BRICK 3km ★</strong></td><td>Eat 60g carbs/hour riding. Then run 3km immediately on alien legs.</td></tr>
+      <tr><td>Sun 23</td><td>Long run 14km</td><td>Ada loop. Familiar territory.</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<!-- WEEK 3 -->
+<div class="slide slide-compact">
+  <h2><span class="number">3</span> Week 3: The Big Build (Aug 24–30)</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Day</th><th>Session</th><th>Details</th></tr></thead>
+    <tbody>
+      <tr><td>Mon 24</td><td>Rest</td><td></td></tr>
+      <tr><td>Tue 25</td><td><strong style="color:var(--swim)">Swim #7 ★</strong></td><td>3×400m, 60s rest. The week distance stops being scary.</td></tr>
+      <tr><td>Wed 26</td><td>Bike 90min</td><td>~35km, 2×15min race effort.</td></tr>
+      <tr><td>Thu 27</td><td>Run 10km easy</td><td></td></tr>
+      <tr><td>Fri 28</td><td><strong style="color:var(--swim)">Swim #8 — 1200m OW ★★</strong></td><td>Continuous in Ada, wetsuit. Landmark to landmark. Breaststroke to recover, just keep moving.</td></tr>
+      <tr><td>Sat 29</td><td><strong style="color:var(--bike)">75km + BRICK 5km ★</strong></td><td>Longest ride of your life. Bottle+gel rhythm. Then 5km at 6:15–6:30/km.</td></tr>
+      <tr><td>Sun 30</td><td>Long run 16km</td><td>Or rest if wrecked — the ★ sessions are banked.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="warning"><p>~9.5 hours. The hardest training week. Survive it and you're basically ready.</p></div>
+</div>
+
+<!-- WEEK 4 -->
+<div class="slide slide-compact">
+  <h2><span class="number">4</span> Week 4: Peak + Proof (Aug 31–Sep 6)</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Day</th><th>Session</th><th>Details</th></tr></thead>
+    <tbody>
+      <tr><td>Mon 31</td><td>Rest</td><td></td></tr>
+      <tr><td>Tue 1</td><td><strong style="color:var(--swim)">Swim #10</strong></td><td>1000m relaxed: 400+300+200+100.</td></tr>
+      <tr><td>Wed 2</td><td>Bike 90min</td><td>~35km easy-moderate.</td></tr>
+      <tr><td>Thu 3</td><td>Run 10km, 5 at race pace</td><td>Feel how easy 6:00/km is. That's the point.</td></tr>
+      <tr><td>Fri 4</td><td>Rest</td><td>Sleep. Tomorrow is the whole plan in one day.</td></tr>
+      <tr><td>Sat 5</td><td><strong style="color:var(--gold)">★★★ THE REHEARSAL</strong></td><td><strong>1900m OW swim → 60km ride → 5km run.</strong> Full dress rehearsal at Ada: wetsuit, race nutrition, transitions from a backpack, race-day wake-up time. Finish it and <em>know</em>, not hope.</td></tr>
+      <tr><td>Sun 6</td><td>14km very easy or rest</td><td>Only if the body says yes.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="danger"><p><strong>DECISION POINT (Sep 5):</strong> 1900m continuous, any stroke mix, no stopping → you will finish this race. Not yet → retry Sep 8, then honest talk. Based on the Week 1–3 progression: you'll pass.</p></div>
+</div>
+
+<!-- WEEK 5 -->
+<div class="slide slide-compact">
+  <h2><span class="number">5</span> Week 5: Taper → Race (Sep 7–13)</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Day</th><th>Session</th><th>Details</th></tr></thead>
+    <tbody>
+      <tr><td>Mon 7</td><td>Rest</td><td></td></tr>
+      <tr><td>Tue 8</td><td>Swim 800m easy</td><td>Relaxed. You're a swimmer now.</td></tr>
+      <tr><td>Wed 9</td><td>Bike 45min + final check</td><td>Shifting, brakes, tires. Anything off → shop TODAY.</td></tr>
+      <tr><td>Thu 10</td><td>Run 6km + strides</td><td></td></tr>
+      <tr><td>Fri 11</td><td>Swim 400m at Ada + <strong>check-in</strong></td><td>Athlete check-in, race briefing, study transition.</td></tr>
+      <tr><td>Sat 12</td><td><strong>Bike check-in</strong></td><td>Rack the bike (mandatory). Lay out both transitions. Carb-load 8–10g/kg. Early bed.</td></tr>
+      <tr><td><strong>Sun 13</strong></td><td><strong style="color:var(--orange)">RACE DAY</strong></td><td><strong>IRONMAN 70.3 BELGRADE — 1.9 / 90 / 21.1</strong></td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<!-- SWIM GUIDE -->
+<div class="slide" id="swim">
+  <h2><span class="number">🌊</span> The Swim: What Actually Matters</h2>
+  <div class="card-grid">
+    <div class="card"><h4>Panic is breath, not fitness</h4><p>Open water + no wall + dark bottom = adrenaline = short breath = "drowning" feeling while your muscles are fine. Fix: <strong>exhale fully underwater</strong>, and exposure — hence 4+ open-water sessions before race day.</p></div>
+    <div class="card"><h4>Slow down to speed up</h4><p>Gliding beats thrashing. A relaxed 2:45/100m swimmer beats a 2:15 swimmer who blows up at 800m. Your race pace should feel embarrassingly easy.</p></div>
+    <div class="card"><h4>Sighting</h4><p>Every 8–10 strokes: eyes up like a crocodile, find the buoy, head down. Practice from Week 2 or you'll swim 2200m on race day.</p></div>
+    <div class="card"><h4>Breaststroke is legal</h4><p>So is backstroke, so is treading water to reset. Illegal: making progress holding a kayak, or walking on the bottom. "Freestyle until bored, breaststroke to breathe, repeat" finishes thousands of 70.3 swims every year.</p></div>
+    <div class="card"><h4>Wetsuit = cheat mode</h4><p>Legs float, body warm, buoyant even at rest. Swim in it 3+ times before race day — it changes your stroke. Body Glide on the neck.</p></div>
+    <div class="card"><h4>The one luxury worth buying</h4><p>Two swim lessons in Week 1. A coach watching your breathing for 45 minutes saves more time than every other session combined.</p></div>
+  </div>
+</div>
+
+<!-- RACE DAY PACING -->
+<div class="slide" id="race">
+  <h2><span class="number">⚠</span> Race Day Pacing</h2>
+  <div class="pace-band swim-band"><span class="km">SWIM 1.9km</span><span class="pace">48–55min</span><span class="note">Embarrassingly easy. Seed at the back, clean water, sight every 8–10, breaststroke to reset. You can't win here — only lose.</span></div>
+  <div class="pace-band"><span class="km">T1</span><span class="pace">~6min</span><span class="note">Walk if HR is high. Helmet ON before touching the bike. Towel, socks, go.</span></div>
+  <div class="pace-band bike-band danger-band"><span class="km">BIKE 0–20km</span><span class="pace">HR ≤ 140</span><span class="note">The classic 70.3 suicide zone. Everyone passes you — let them. You'll eat their dinner at run km 15.</span></div>
+  <div class="pace-band bike-band"><span class="km">BIKE 20–85km</span><span class="pace">26–27km/h</span><span class="note">Metronome mode, HR 135–145. Eat and drink on the timer, not on feeling. The run is fueled HERE.</span></div>
+  <div class="pace-band bike-band"><span class="km">BIKE 85–90km</span><span class="pace">easy spin</span><span class="note">Light gear, high cadence, wake the legs for the run.</span></div>
+  <div class="pace-band"><span class="km">T2</span><span class="pace">~4min</span><span class="note">Rack bike, THEN helmet off. Run shoes, race belt, cap, 2 gels.</span></div>
+  <div class="pace-band run-band danger-band"><span class="km">RUN 0–5km</span><span class="pace">6:20/km</span><span class="note">Deliberately slow. Brick legs vanish around km 3–4. Don't trust how "fine" you feel.</span></div>
+  <div class="pace-band run-band"><span class="km">RUN 5–18km</span><span class="pace">6:00–6:10/km</span><span class="note">Walk every aid station. Coke from km 12 is rocket fuel.</span></div>
+  <div class="pace-band run-band finish"><span class="km">RUN 18–21.1</span><span class="pace">empty it</span><span class="note">The finish chute at Ada. Your lake. Your city. GO.</span></div>
+
+  <div class="success" style="margin-top:30px;"><p><strong>Projected finish: 6:40–6:55.</strong> Sub-6:30 if the day is kind. Anything under 8:30 gets the same medal and the same sentence: <em>you are an IRONMAN 70.3 finisher.</em></p></div>
+
+  <h3>Nutrition (rehearsed Sep 5, no improvising)</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>When</th><th>What</th></tr></thead>
+    <tbody>
+      <tr><td>3h before</td><td>Toast + jam, banana, coffee, 500ml water. Stop eating 90min out.</td></tr>
+      <tr><td>15min pre-swim</td><td>1 gel + sips of water</td></tr>
+      <tr><td>Bike, every 20min</td><td>Drink — alternate water/electrolyte, ~2 bottles + aid station grabs</td></tr>
+      <tr><td>Bike, every 40min</td><td>Gel or half bar → 60–70g carbs/hour, ~5 feeds total. <strong>Under-eat here = run collapses.</strong></td></tr>
+      <tr><td>T2</td><td>1 gel going out</td></tr>
+      <tr><td>Run, every ~5km</td><td>Gel (carry 3) + course offerings. Coke in the second half.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>The Rules That DQ Rookies</h3>
+  <ul>
+    <li><strong>Helmet buckled before unracking. Helmet on until re-racked.</strong> The #1 first-timer DQ.</li>
+    <li><strong>No drafting:</strong> 12m gap (~6 bike lengths), pass within 25s.</li>
+    <li><strong>No headphones. Ever.</strong> Instant DQ.</li>
+    <li>Number on your back for the bike, front for the run — race belt, just rotate it.</li>
+    <li>Mount AFTER the mount line; dismount BEFORE the dismount line.</li>
+    <li>Litter only in aid-station zones.</li>
+  </ul>
+</div>
+
+<!-- GEAR -->
+<div class="slide" id="gear">
+  <h2><span class="number">🛠</span> Gear</h2>
+  <div class="two-col">
+    <div>
+      <h3>Buy this week (non-negotiable)</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Item</th><th>Why</th><th>EUR</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Wetsuit</strong> (buy or rent)</td><td>Legal at 23°C. Free buoyancy + calm for a new swimmer.</td><td>120–250</td></tr>
+          <tr><td>Goggles ×2</td><td>Race-morning fog/leak is a €15 problem — solve it now</td><td>25–40</td></tr>
+          <tr><td>Swim buoy + bright cap</td><td>Solo lake swims. Non-negotiable safety.</td><td>25–35</td></tr>
+          <tr><td><strong>Tri suit</strong></td><td>One outfit all day — swim, bike, run. No changing.</td><td>60–120</td></tr>
+          <tr><td>Bottle cages ×2 + bottles</td><td>Eating is the fourth discipline</td><td>20–30</td></tr>
+          <tr><td>Tubes ×2, levers, pump/CO₂</td><td>A flat without it = DNF. Practice one change at home.</td><td>30–40</td></tr>
+          <tr><td>Pool pass</td><td>14 swims coming (Tašmajdan / Banjica / 25. maj)</td><td>30–50</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div>
+      <h3>Before Week 3</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Item</th><th>EUR</th></tr></thead>
+        <tbody>
+          <tr><td>Race belt</td><td>10</td></tr>
+          <tr><td>Chamois cream / Body Glide</td><td>10–15</td></tr>
+          <tr><td>Gels/bars ×15, one brand</td><td>35–50</td></tr>
+          <tr><td>Electrolyte tabs</td><td>10–15</td></tr>
+          <tr><td>Sunglasses</td><td>20–50</td></tr>
+        </tbody>
+      </table></div>
+      <h3>Already have</h3>
+      <ul>
+        <li>The bike from Saturday's 40km — <strong>service it this week</strong></li>
+        <li>Running shoes incl. Adios Pro 4 ✓</li>
+        <li>A marathon-sized engine ✓</li>
+      </ul>
+      <h3>Explicitly NOT needed</h3>
+      <ul>
+        <li>Clip-in pedals — flats + sneakers are fine for a first 70.3, one less T1 failure mode</li>
+        <li>Aero anything, power meters, a new bike. Your engine is the equipment.</li>
+      </ul>
+      <div class="info"><p><strong>Total: ~€400–700.</strong> All reusable for the next challenge.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- RACE WEEK -->
+<div class="slide slide-compact" id="checklist">
+  <h2><span class="number">✓</span> Race Morning — September 13</h2>
+  <div class="two-col">
+    <div>
+      <div class="checklist">
+        <div class="checklist-item"><span class="box"></span>Wake ~4:45. Breakfast 3h out. Stop eating 90min before.</div>
+        <div class="checklist-item"><span class="box"></span>Tri suit on at home. Body Glide: neck, thighs, everywhere.</div>
+        <div class="checklist-item"><span class="box"></span>Transition: pump tires, bottles on bike, nutrition taped, towel down, shoes out</div>
+        <div class="checklist-item"><span class="box"></span>Walk swim-in → your rack → bike-out. Count the rows. Twice.</div>
+        <div class="checklist-item"><span class="box"></span>Wetsuit on 20min before. Spit in goggles. Spare pair in the suit.</div>
+        <div class="checklist-item"><span class="box"></span>Gel 15min before start. Seed at the BACK of the rolling start.</div>
+        <div class="checklist-item"><span class="box"></span>Deep breath. It's your lake. You've swum this exact water.</div>
+      </div>
+    </div>
+    <div>
+      <h3>Race week calendar</h3>
+      <div class="timeline">
+        <div class="timeline-item"><h4>Fri Sep 11 — Check-in</h4><p>Athlete check-in + briefing at Ada. Easy 400m swim. Study transition layout.</p></div>
+        <div class="timeline-item"><h4>Sat Sep 12 — Bike check-in</h4><p>Rack the bike (mandatory). Carb-load 8–10g/kg. Feet up, early bed, two alarms.</p></div>
+        <div class="timeline-item"><h4>Sun Sep 13 — RACE</h4><p>1.9km · 90km · 21.1km. Finish line at Ada Ciganlija.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- UNKNOWNS -->
+<div class="slide" id="unknowns">
+  <h2><span class="number">?</span> The Unknown Unknowns, Triathlon Edition</h2>
+  <div class="card-grid">
+    <div class="card"><h4>1. Race week admin is a discipline</h4><p>Check-in, briefing, bike check-in, body marking, timing chip. Read the athlete guide twice. Half of first-timer stress is logistics, not fitness.</p></div>
+    <div class="card"><h4>2. 3000 bikes look identical</h4><p>After 1900m your brain is porridge. Memorize your rack row Saturday. Landmark, count, repeat.</p></div>
+    <div class="card"><h4>3. Wetsuit removal is a skill</h4><p>Practice twice: peel to waist exiting the water, step and rip. Or accept +90s — you have the margin.</p></div>
+    <div class="card"><h4>4. A heel finds your goggles</h4><p>Roll to your back, fix, carry on. This is why you seeded at the back.</p></div>
+    <div class="card"><h4>5. The first 20km of the bike</h4><p>Post-swim adrenaline + flat road = the classic blow-up. HR cap 140. Boring wins races.</p></div>
+    <div class="card"><h4>6. Peeing is logistics</h4><p>6+ hours of drinking. Portaloos in transition and at every aid station. Plan for one stop, lose 90 seconds, stay human.</p></div>
+    <div class="card"><h4>7. New chafing frontiers</h4><p>Wetsuit neck, saddle region, tri-suit seams. Body Glide everything twice.</p></div>
+    <div class="card"><h4>8. Wet feet for 6 hours</h4><p>Small towel in T1, socks for the bike. 20 seconds spent, feet saved for the half marathon.</p></div>
+    <div class="card"><h4>9. The 4:45am brain</h4><p>Practice the race wake-up once — the Sep 5 rehearsal starts at race time for exactly this reason.</p></div>
+    <div class="card"><h4>10. Run km 15 will ask why</h4><p>Same voice from marathon km 32. Same answer: "I chose this." It worked on the Hotel Moskva hill; it works on the lake loop.</p></div>
+    <div class="card"><h4>11. Post-race</h4><p>Happily broken for 3–4 days. Then a finisher medal on the shelf and a dangerous thought: "what's next?" (See: the hub page has a slot open.)</p></div>
+  </div>
+
+  <p style="margin-top:40px;text-align:center;color:var(--dim);font-style:italic;">
+    Five months ago you couldn't run. Then you ran a marathon on five weeks of training.<br>
+    Now you can barely swim — so obviously you're becoming a triathlete in five weeks,<br>
+    in a race that starts and ends on the lake outside your door.<br><br>
+    <strong style="color:var(--orange)">It's absurd. It's also exactly your kind of absurd. See you at Ada.</strong>
+  </p>
+</div>
+
+</div>
+
+<script src="data/activities.js"></script>
+<script src="assets/site.js"></script>
+<script>
+  startCountdown('countdown', '2026-09-13', 'RACE');
+
+  const WEEKS = [
+    { num: 1, start: '2026-08-08', end: '2026-08-16', targets: { Swim: 2.5, Ride: 100, Run: 20 }, label: 'Foundations' },
+    { num: 2, start: '2026-08-17', end: '2026-08-23', targets: { Swim: 3.5, Ride: 130, Run: 25 }, label: 'Open Water' },
+    { num: 3, start: '2026-08-24', end: '2026-08-30', targets: { Swim: 5, Ride: 150, Run: 28 }, label: 'Big Build' },
+    { num: 4, start: '2026-08-31', end: '2026-09-06', targets: { Swim: 5, Ride: 160, Run: 30 }, label: 'Peak + Proof' },
+    { num: 5, start: '2026-09-07', end: '2026-09-13', targets: { Swim: 1.5, Ride: 60, Run: 12 }, label: 'RACE WEEK' },
+  ];
+
+  function renderTriWeeks() {
+    const container = document.getElementById('weekBlocks');
+    const today = new Date().toISOString().slice(0, 10);
+    container.innerHTML = '';
+    WEEKS.forEach(w => {
+      const acts = ACT.filter(a => inRange(a, w.start, w.end));
+      const status = today > w.end ? 'done' : (today >= w.start ? 'current' : 'todo');
+      const hours = sumH(acts);
+
+      let bars = '';
+      for (const [sport, cls] of [['Swim', 'swim'], ['Ride', 'bike'], ['Run', 'run']]) {
+        const km = sumKm(bySport(acts, sport));
+        const target = w.targets[sport];
+        const pct = Math.min(100, Math.round((km / target) * 100));
+        const disp = sport === 'Swim' ? `${(km * 1000).toFixed(0)}/${target * 1000}m` : `${km.toFixed(0)}/${target}km`;
+        bars += `<div class="tri-bar ${cls}"><div class="tri-label"><span>${sport === 'Ride' ? 'Bike' : sport}</span><span>${disp}</span></div><div class="bar"><div style="width:${pct}%"></div></div></div>`;
+      }
+
+      const div = document.createElement('div');
+      div.className = 'week-block' + (status === 'current' ? ' active' : '') + (status === 'done' ? ' completed' : '');
+      div.innerHTML = `
+        <div class="week-num">Week ${w.num} — ${w.label}</div>
+        <div class="week-dates">${w.start.slice(5).replace('-', '/')} – ${w.end.slice(5).replace('-', '/')}</div>
+        <div class="week-km" style="font-size:1.4rem">${fmtH(hours)}</div>
+        ${bars}
+        <div class="week-status ${status}">${status === 'current' ? 'IN PROGRESS' : status === 'done' ? 'COMPLETED' : 'UPCOMING'}</div>
+      `;
+      container.appendChild(div);
+    });
+  }
+
+  renderTriWeeks();
+  renderLog('triLog', a => a.date >= '2026-08-08');
+</script>
+
+</body>
+</html>

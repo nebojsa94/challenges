@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Belgrade Marathon 2026 — Challenge Complete</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">CHALLENGES</a>
+  <button class="nav-toggle">☰</button>
+  <div class="nav-links">
+    <a href="#result">Result</a>
+    <a href="#numbers">The Numbers</a>
+    <a href="#log">Training Log</a>
+    <a href="#lessons">Lessons</a>
+    <a href="ironman-70-3-belgrade-2026.html">Next: 70.3 →</a>
+  </div>
+</nav>
+
+<div class="page">
+
+<!-- TITLE -->
+<div class="slide slide-title" id="result">
+  <h1>BELGRADE<br>MARATHON</h1>
+  <p class="subtitle">42.195 km · April 19, 2026 · Challenge Complete</p>
+  <div class="big-stat" style="margin:10px 0 30px;">
+    <div class="number-val" style="color:var(--green);font-size:5.5rem;">4:14:27</div>
+    <div class="label">Official finish</div>
+  </div>
+  <p class="meta">
+    From <strong>zero running in 12+ months</strong> to marathon finisher.<br>
+    Prep: <strong>5 weeks</strong> · <strong>11 training runs</strong> · <strong id="prep-hours">~12 hours</strong> of training.<br>
+    Republic Square → New Belgrade → Hotel Moskva, uphill finish and all.
+  </p>
+</div>
+
+<!-- NUMBERS -->
+<div class="slide" id="numbers">
+  <h2><span class="number">Σ</span> The Numbers</h2>
+  <div class="stat-row">
+    <div class="big-stat"><div class="number-val" id="n-runs">—</div><div class="label">training runs</div></div>
+    <div class="big-stat"><div class="number-val" id="n-km">—</div><div class="label">training km</div></div>
+    <div class="big-stat"><div class="number-val" id="n-hours">—</div><div class="label">training hours</div></div>
+    <div class="big-stat"><div class="number-val" style="color:var(--gold)" id="n-long">29.0</div><div class="label">longest run (km)</div></div>
+    <div class="big-stat"><div class="number-val" style="color:var(--green)">6:02</div><div class="label">race pace /km</div></div>
+  </div>
+
+  <h3>How the weeks went</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Week</th><th>Plan</th><th>Target</th><th>Actual</th><th>Long run</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Rebuild, test the body</td><td>18km</td><td>18.1km</td><td>—</td></tr>
+      <tr><td>2</td><td>First long run</td><td>33km</td><td>26.0km</td><td>14.1km</td></tr>
+      <tr><td>3</td><td>Half marathon distance</td><td>40km</td><td>29.5km</td><td>22.0km</td></tr>
+      <tr><td>4</td><td>Peak — the key session</td><td>41km</td><td>37.1km</td><td>29.0km</td></tr>
+      <tr><td>5</td><td>Taper → race</td><td>20km + race</td><td>10km + 42.4km</td><td><strong style="color:var(--green)">THE RACE</strong></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="info"><p>Hit ~80% of planned volume, never got injured, and every single long run happened: 14 → 22 → 29 → 42.4. The plan's one real rule — protect the long runs — held. Target was sub-4 stretch / 4:15 realistic. Finished 4:14:27. Called it.</p></div>
+</div>
+
+<!-- LOG -->
+<div class="slide" id="log">
+  <h2><span class="number">📋</span> Training Log</h2>
+  <p style="margin-bottom:10px;">Every run of the block, straight from Strava.</p>
+  <div class="run-log" id="marLog"></div>
+</div>
+
+<!-- LESSONS -->
+<div class="slide" id="lessons">
+  <h2><span class="number">💡</span> What the Marathon Taught Us</h2>
+  <div class="card-grid">
+    <div class="card"><h4>The engine builds faster than you think</h4><p>Five weeks from couch to 42km at 6:02/km. Aerobic memory is real. This is now the operating thesis for every challenge on this site.</p></div>
+    <div class="card"><h4>Long sessions are the only sacred sessions</h4><p>Weekly volume slipped ~20% and it didn't matter. The 14/22/29km long runs were non-negotiable and they were what carried race day.</p></div>
+    <div class="card"><h4>Nutrition rehearsal works</h4><p>The gel schedule practiced on the 29km run executed flawlessly in the race. No wall, no bonk, negative-ish split. Rehearse, don't improvise.</p></div>
+    <div class="card"><h4>The body holds if you listen</h4><p>Zero injuries on an aggressive ramp because easy days stayed genuinely easy and rest days were real.</p></div>
+    <div class="card"><h4>The mind is the multiplier</h4><p>Km 30–35 asked the question. "I chose this" answered it. Now it gets asked again at 70.3 run km 15.</p></div>
+    <div class="card"><h4>Five weeks is a real unit of transformation</h4><p>Which is why the next challenge — <a href="ironman-70-3-belgrade-2026.html" style="color:var(--orange)">IRONMAN 70.3 Belgrade</a> — gets exactly five weeks too.</p></div>
+  </div>
+
+  <p style="margin-top:40px;text-align:center;">
+    <a href="ironman-70-3-belgrade-2026.html" style="display:inline-block;background:linear-gradient(135deg,var(--swim),var(--orange));color:var(--bg);font-weight:900;padding:16px 40px;border-radius:12px;text-decoration:none;font-size:1.2rem;">NEXT CHALLENGE: IRONMAN 70.3 →</a>
+  </p>
+</div>
+
+</div>
+
+<script src="data/activities.js"></script>
+<script src="assets/site.js"></script>
+<script>
+  // Training block: Mar 14 – Apr 18 (race Apr 19 shown separately)
+  const training = ACT.filter(a => a.sport === 'Run' && inRange(a, '2026-03-14', '2026-04-18'));
+  document.getElementById('n-runs').textContent = training.length;
+  document.getElementById('n-km').textContent = sumKm(training).toFixed(0);
+  document.getElementById('n-hours').textContent = sumH(training).toFixed(1);
+  document.getElementById('prep-hours').textContent = '~' + Math.round(sumH(training)) + ' hours';
+
+  // Full block log including race day, oldest first
+  renderLog('marLog', a => a.sport === 'Run' && inRange(a, '2026-03-14', '2026-04-19'), false);
+</script>
+
+</body>
+</html>
