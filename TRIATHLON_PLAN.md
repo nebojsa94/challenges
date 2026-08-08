@@ -5,7 +5,7 @@
 **Venue:** Sava Lake (Ada Ciganlija) swim, flat 2-loop city bike course, flat run circuit around Ada
 **Weeks Available:** 5 (starting August 8, 2026)
 
-**Athlete profile:** Belgrade Marathon finisher (4:14:27, April 2026, off 5 weeks / ~12 hours of run training). Currently running ~10km comfortably at 5:50/km @ 150bpm. Cycling: one 40km ride (Aug 8, 25km/h avg). Swimming: four short swims, longest 650m. Lives at Banovo Brdo — 15 minutes from the race swim venue.
+**Athlete profile:** Belgrade Marathon finisher (4:14:27, April 2026, off 5 weeks / ~12 hours of run training). Currently running ~10km comfortably at 5:50/km @ 150bpm. Cycling: one 40km ride (Aug 8, 25km/h avg). Swimming: four logged swims; longest 1300m in ~36min (July 31 — the watch under-counted it as 650m). Lives at Banovo Brdo — 15 minutes from the race swim venue.
 
 ---
 
@@ -22,13 +22,24 @@ You've done this to yourself before. 5 weeks for a marathon was "not enough" and
 
 **The bad news is singular but serious:**
 
-**You cannot currently swim 1900m.** Your longest swim ever is 650m. The swim is the one discipline where "grit through it" does not work — fatigue in deep water is a safety problem, not a suffering problem. This entire plan is therefore built around one non-negotiable priority: **swim three times a week, every week, no exceptions.** Everything else can flex. The swims cannot.
+**You have never swum 1900m.** Your longest swim is 1300m at ~2:45/100m — which is actually a strong signal: that pace extrapolates to a ~52-minute race swim, comfortably inside the 1:10 cutoff. But 1300m fresh in a quiet lake is not 1900m in a wetsuit with 1000 other people, and the swim is the one discipline where "grit through it" does not work — fatigue in deep water is a safety problem, not a suffering problem. This plan is therefore still built around one non-negotiable priority: **swim three times a week, every week, no exceptions.** Everything else can flex. The swims cannot.
 
-Swim fitness is also the fastest fitness to build — it's technique- and frequency-limited, not engine-limited, and your engine is already big. Going from 650m to 1900m continuous in 4 weeks at 3 swims/week is a well-trodden path. With a wetsuit (23°C water = wetsuit legal) you get free buoyancy, and breaststroke recovery is legal in IRONMAN races.
+Swim fitness is also the fastest fitness to build — it's technique- and frequency-limited, not engine-limited, and your engine is already big. Going from 1300m to 1900m continuous in 4 weeks at 3 swims/week is a short, well-trodden path. With a wetsuit (23°C water = wetsuit legal) you get free buoyancy, and breaststroke recovery is legal in IRONMAN races.
 
 ### Goal
 
-**Finish.** Target window: **6:30–7:15**. The plan's pacing gets you home around 6:45 with margin on every cutoff. A blown swim still leaves you ~7:15. This is a survival plan with a comfortable buffer — the only DNF scenarios are a swim you didn't train for (this plan fixes that), a mechanical you can't repair (we prepare for that), or a nutrition failure (we rehearse that).
+**A-goal: sub-6:00.** B-goal: sub-6:30. C-goal: finish. The sub-6 budget:
+
+| Segment | Budget | What it requires |
+|---------|--------|------------------|
+| Swim 1.9km | 48–52min | Your July pace (2:45/100m) held for 1900m — the wetsuit alone is worth 5–10s/100m |
+| T1 | ≤4min | Rehearsed. Transitions are free time. |
+| Bike 90km | 3:00–3:10 (28.5–30km/h) | **This is where sub-6 lives or dies.** Flat closed roads + your engine + 5 weeks of riding. Your 25km/h first-ever ride is a floor, not a ceiling. |
+| T2 | ≤3min | Rehearsed. |
+| Run 21.1km | 1:58–2:05 (5:35–5:55/km) | You ran 42km at 6:02 in April. A flat half at 5:45 off the bike is honest work, not a miracle. |
+| **Total** | **5:53–6:14** | Sub-6 if the swim and bike land on the good end |
+
+**Decision gate — Sep 5 rehearsal:** if the 60km ride holds 29km/h+ comfortably and the brick run feels controlled at 5:45/km, race the sub-6 plan. If not, race the 6:15 plan and take sub-6:30. Either way the DNF scenarios remain the same three — untrained swim (this plan fixes it), unrepairable mechanical (we prepare), nutrition failure (we rehearse).
 
 ### Risk Acknowledgment
 
@@ -100,9 +111,9 @@ You already opened this week with a 40km ride + 2.5km brick run on Saturday morn
 | Thu Aug 13 | **Run 10km easy** | Your normal run. 5:50–6:10/km. Nothing new. |
 | Fri Aug 14 | Rest or 30min easy spin | Legs up. |
 | Sat Aug 15 | **Long ride 50km** ★ | Flat route (Sava embankment / Pančevo road direction). Eat something at 45min and 1h30 — practice, not hunger. Bottle every 15min. |
-| Sun Aug 16 | **Swim #3 (pool)** ★ + 5km easy run | Swim: 400m continuous test (any pace, breaststroke breaks allowed but try not to stop at the wall) + 4×50 easy. Then later in the day, easy 5km run. |
+| Sun Aug 16 | **Swim #3 (pool)** ★ + 5km easy run | Swim: 800m continuous test (any pace, breaststroke breaks allowed but try not to stop at the wall) + 4×50 easy. Then later in the day, easy 5km run. |
 
-**Week 1 checkpoint:** Can you swim 400m without holding the wall? If yes, dead on schedule. If no, book 1–2 swim lessons *this week* — a coach fixing your breathing is worth more than any session in this plan.
+**Week 1 checkpoint:** 800m without holding the wall, relaxed — given your 1300m swim in July, this should be comfortable. If it isn't, book 1–2 swim lessons *this week* — a coach fixing your breathing is worth more than any session in this plan.
 
 ---
 
@@ -131,7 +142,7 @@ You already opened this week with a 40km ride + 2.5km brick run on Saturday morn
 | Wed Aug 26 | **Bike 90min** | ~35km, 2×15min race effort. |
 | Thu Aug 27 | **Run 10km easy** | |
 | Fri Aug 28 | **Swim #8 — OPEN WATER at Ada** ★★ | **1200m continuous** in the lake (wetsuit). Sight a fixed landmark, swim to it, pick the next. Breaststroke to recover is fine — just don't stop moving. |
-| Sat Aug 29 | **Long ride 75km + BRICK run 5km** ★ | Longest ride of your life, probably. Flat, steady, disciplined eating: bottle+gel rhythm. Then 5km off the bike at 6:15–6:30/km. |
+| Sat Aug 29 | **Long ride 75km + BRICK run 5km** ★ | Longest ride of your life, probably. Flat, with 2×20min at 29–30km/h race effort, disciplined eating: bottle+gel rhythm. Then 5km off the bike at 6:00/km. |
 | Sun Aug 30 | **Long run 16km easy** OR rest if wrecked | Listen to the body. The ★ sessions are banked; this one is a bonus. |
 
 **Weekly volume:** ~9.5 hours. The hardest training week. Survive it and you're basically ready.
@@ -145,9 +156,9 @@ You already opened this week with a 40km ride + 2.5km brick run on Saturday morn
 | Mon Aug 31 | Rest | |
 | Tue Sep 1 | **Swim #10 (pool)** | 1000m relaxed: 400 + 300 + 200 + 100, short rests. |
 | Wed Sep 2 | **Bike 90min** | ~35km easy-moderate. Final long-ish midweek ride. |
-| Thu Sep 3 | **Run 10km** with 5km at race pace (6:00/km) | Feel how easy race pace is. That's the point. |
+| Thu Sep 3 | **Run 10km** with 5km at race pace (5:45/km) | Groove the goal pace on fresh legs. |
 | Fri Sep 4 | Rest | Sleep. Tomorrow is the whole plan in one day. |
-| Sat Sep 5 | **★★★ THE REHEARSAL: 1900m OW swim, then 60km ride, then 5km run** | Morning, at Ada. Full race-day dress rehearsal: wetsuit, goggles, race nutrition, transitions out of a backpack. Swim the full 1900m continuous (this is the DECISION POINT — see below). Then ride 60km at race effort eating on schedule. Then 5km at 6:15/km. Finish and know, not hope. |
+| Sat Sep 5 | **★★★ THE REHEARSAL: 1900m OW swim, then 60km ride, then 5km run** | Morning, at Ada. Full race-day dress rehearsal: wetsuit, goggles, race nutrition, transitions out of a backpack. Swim the full 1900m continuous (DECISION POINT #1 — see below). Then ride 60km at target race effort: can you hold 29km/h+ without cooking yourself? (DECISION POINT #2 — picks the sub-6 or 6:15 pacing plan.) Then 5km at 5:45/km. Finish and know, not hope. |
 | Sun Sep 6 | **Long run 14km very easy** OR full rest | Only if body says yes. |
 
 **DECISION POINT — Sep 5:** 1900m continuous (any stroke mix, no stopping) ✅ → you will finish this race, proceed to taper. ❌ → one more attempt Sep 8; if still no, we talk honestly about whether race morning is safe. (Based on Weeks 1–3 progression, you'll pass.)
@@ -176,17 +187,17 @@ You already opened this week with a 40km ride + 2.5km brick run on Saturday morn
 
 | Segment | Target | Effort rule |
 |---------|--------|-------------|
-| Swim | 48–55min | So easy it feels embarrassing. Long strokes, sight every 8–10, breaststroke whenever you need to reset. You cannot win the race in the water, you can only lose it. |
-| T1 | ~6min | Walk if the heart rate is high. Helmet ON before touching the bike. |
-| Bike 0–20km | HR ≤ 140 | Everyone will pass you. Let them. They're eating your dinner now; you'll eat theirs at km 15 of the run. |
-| Bike 20–85km | HR 135–145, ~26–27km/h | Metronome mode. Eat/drink on the timer, not on feeling. |
-| Bike 85–90km | Spin easy, high cadence | Light gear, wake the legs up for the run. |
-| T2 | ~4min | Rack bike, helmet off AFTER racking. Socks, run shoes, race belt, cap, 2 gels. |
-| Run 0–5km | 6:20/km — deliberately slow | Brick legs disappear around km 3–4. Do not trust how "fine" you feel. |
-| Run 5–18km | 6:00–6:10/km | Walk every aid station. Coke from ~km 12 onward is rocket fuel. |
+| Swim | 48–52min | Smooth, not easy-lazy: your July pace, held. Long strokes, sight every 8–10, breaststroke only to reset. You cannot win the race in the water, you can only lose it. |
+| T1 | ≤4min | Brisk, rehearsed, no faffing. Helmet ON before touching the bike. |
+| Bike 0–20km | HR ≤ 140, ~28km/h | Adrenaline control. Settle, eat at km 10, spin up gradually. |
+| Bike 20–85km | HR 140–148, 29–30km/h | The sub-6 engine room. Aero-ish, steady, eat/drink on the timer. If HR creeps over 150, back off — the run still has to happen. |
+| Bike 85–90km | ~28km/h, high cadence | Light gear, wake the legs up for the run. |
+| T2 | ≤3min | Rack bike, helmet off AFTER racking. Socks, run shoes, race belt, cap, 2 gels. |
+| Run 0–3km | 6:00/km — controlled | Brick legs disappear around km 3. Do not trust how "fine" you feel. |
+| Run 3–18km | 5:40–5:50/km | Metronome. Quick cup-grab at aid stations, don't stroll. Coke from ~km 12 is rocket fuel. |
 | Run 18–21.1km | Whatever is left | Empty it. The finish chute at Ada, in your city, on your lake. |
 
-**Projected finish: ~6:40–6:55.** Sub-6:30 if the day is kind. Anything under 8:30 gets the same medal and the same title: IRONMAN 70.3 finisher.
+**Projected finish: 5:53–6:14. Sub-6 when the swim and bike land on the good end** — and the Sep 5 rehearsal tells you which plan to race. Fallback pacing (bike 27km/h, run 6:00/km) still lands ~6:25.
 
 ### Race Nutrition (rehearse ALL of this on Sep 5)
 
@@ -304,4 +315,4 @@ Because this is the part you can't grit:
 
 ---
 
-*Five months ago you couldn't run. Then you ran a marathon on five weeks of training. Now you can barely swim — so obviously, you're going to become a triathlete in five weeks, in a race that starts and ends on the lake outside your door. It's absurd. It's also exactly your kind of absurd. See you at Ada.*
+*Five months ago you couldn't run. Then you ran a marathon on five weeks of training. Now you've never swum the race distance — so obviously, you're going to become a triathlete in five weeks, in a race that starts and ends on the lake outside your door. It's absurd. It's also exactly your kind of absurd. See you at Ada.*
