@@ -335,5 +335,17 @@ window.ACTIVITIES = [
     "effort": "25.0 km/h",
     "hr": 141,
     "elev": 126
+  },
+  {
+    "id": 19845634393,
+    "date": "2026-08-22",
+    "sport": "Ride",
+    "name": "Morning Ride",
+    "distance": 48.03,
+    "moving_time": 6557,
+    "time": "1:49:17",
+    "effort": "26.4 km/h",
+    "hr": 141,
+    "elev": 92
   }
 ];
