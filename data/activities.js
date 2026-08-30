@@ -347,5 +347,17 @@ window.ACTIVITIES = [
     "effort": "26.4 km/h",
     "hr": 141,
     "elev": 92
+  },
+  {
+    "id": 19968449035,
+    "date": "2026-08-30",
+    "sport": "Run",
+    "name": "Evening Run",
+    "distance": 10.01,
+    "moving_time": 3388,
+    "time": "56:28",
+    "effort": "5:39/km",
+    "hr": 154,
+    "elev": 58
   }
 ];
