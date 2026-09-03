@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-09-03T17:24:42.907Z",
+  "synced_at": "2026-09-03T19:59:03.020Z",
   "activities": [
     {
       "id": 17724460194,
@@ -360,6 +360,18 @@
       "effort": "5:39/km",
       "hr": 154,
       "elev": 58
+    },
+    {
+      "id": 20024841149,
+      "date": "2026-09-03",
+      "sport": "Swim",
+      "name": "Morning Swim",
+      "distance": 1.5,
+      "moving_time": 2475,
+      "time": "41:15",
+      "effort": "2:45/100m",
+      "hr": 140,
+      "elev": 0
     }
   ]
 }

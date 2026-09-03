@@ -359,5 +359,17 @@ window.ACTIVITIES = [
     "effort": "5:39/km",
     "hr": 154,
     "elev": 58
+  },
+  {
+    "id": 20024841149,
+    "date": "2026-09-03",
+    "sport": "Swim",
+    "name": "Morning Swim",
+    "distance": 1.5,
+    "moving_time": 2475,
+    "time": "41:15",
+    "effort": "2:45/100m",
+    "hr": 140,
+    "elev": 0
   }
 ];
