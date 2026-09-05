@@ -371,5 +371,29 @@ window.ACTIVITIES = [
     "effort": "2:45/100m",
     "hr": 140,
     "elev": 0
+  },
+  {
+    "id": 20041907777,
+    "date": "2026-09-05",
+    "sport": "Ride",
+    "name": "Morning Ride",
+    "distance": 50.21,
+    "moving_time": 6513,
+    "time": "1:48:33",
+    "effort": "27.8 km/h",
+    "hr": 141,
+    "elev": 86
+  },
+  {
+    "id": 20041908290,
+    "date": "2026-09-05",
+    "sport": "Run",
+    "name": "Morning Run",
+    "distance": 5.34,
+    "moving_time": 1768,
+    "time": "29:28",
+    "effort": "5:31/km",
+    "hr": 157,
+    "elev": 13
   }
 ];
