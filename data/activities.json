@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-09-14T19:53:56.698Z",
+  "synced_at": "2026-09-14T22:53:08.803Z",
   "activities": [
     {
       "id": 17724460194,
@@ -396,6 +396,54 @@
       "effort": "5:31/km",
       "hr": 157,
       "elev": 13
+    },
+    {
+      "id": 20175811917,
+      "date": "2026-09-13",
+      "sport": "Other",
+      "name": "IRONMAN 70.3 Belgrade 2026 – full race (Apple Watch recording, died at run km 13)",
+      "distance": 0,
+      "moving_time": 20619,
+      "time": "5:43:39",
+      "effort": "—",
+      "hr": 149,
+      "elev": 0
+    },
+    {
+      "id": 20175974466,
+      "date": "2026-09-13",
+      "sport": "Run",
+      "name": "IRONMAN 70.3 Belgrade 2026 – Run",
+      "distance": 20.94,
+      "moving_time": 7526,
+      "time": "2:05:26",
+      "effort": "5:59/km",
+      "hr": 153,
+      "elev": 0
+    },
+    {
+      "id": 20176361960,
+      "date": "2026-09-13",
+      "sport": "Ride",
+      "name": "IRONMAN 70.3 Belgrade 2026 – Bike",
+      "distance": 90.14,
+      "moving_time": 11910,
+      "time": "3:18:30",
+      "effort": "27.2 km/h",
+      "hr": 146,
+      "elev": 271
+    },
+    {
+      "id": 20176362795,
+      "date": "2026-09-13",
+      "sport": "Swim",
+      "name": "IRONMAN 70.3 Belgrade 2026 – Swim",
+      "distance": 1.9,
+      "moving_time": 2315,
+      "time": "38:35",
+      "effort": "2:02/100m",
+      "hr": 156,
+      "elev": 0
     }
   ]
 }
